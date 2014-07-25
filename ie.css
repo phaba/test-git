@@ -1,0 +1,53 @@
+body {
+  background: #efdc17;
+}
+.cf:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.page-wrapper {
+  width: 1240px;
+  margin: 0 auto;
+  margin-top: 37px;
+}
+.page-header {
+  width: 1240px;
+  height: 93px;
+  background: #FFF;
+}
+.page-header > h1 {
+  width: 164px;
+  height: 63px;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: 35px;
+  display: inline-block;
+  float: left;
+}
+.page-header > h1 a {
+  display: inline-block;
+  width: 164px;
+  height: 63px;
+  background: url('images/logo.png') no-repeat;
+  text-indent: -99999px;
+}
+.page-nav {
+  float: right;
+}
+.page-nav ul {
+  margin: 0;
+  display: block;
+  height: 93px;
+}
+.page-nav li {
+  float: left;
+  list-style-type: none;
+  display: inline-block;
+  height: 93px;
+  line-height: 93px;
+}
+.page-nav a {
+  text-decoration: none;
+  color: ;
+}
