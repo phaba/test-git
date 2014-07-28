@@ -4,20 +4,20 @@ $(document).ready(function() {
 		prev = slider.find('.prev'),
 		next = slider.find('.next'),
 		slide_width = slider.find('.slide').eq(0).outerWidth(),
-		current = 0,
+		current = 1,
 		count = slider.find('.slide').length;
 
 	prev.on('click', function() {
-		if(current !== 0) {
+		if(current > 1) {
 			current--;
-			content.animate({scrollLeft: (current * slide_width)}, 1000);
+			content.animate({scrollLeft: ((current - 1) * slide_width)}, 1000);
 		}
 	});
 
 	next.on('click', function() {
-		if(current <= count) {
-			current++;
+		if(current < count) {
 			content.animate({scrollLeft: current * slide_width}, 1000);
+			current++;
 		}
 	});
 });

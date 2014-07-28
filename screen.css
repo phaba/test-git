@@ -425,6 +425,9 @@ th {
 }
 
 /*  END OF NORMALIZE */
+* {
+  font-family: 'Open Sans';
+}
 body {
   background: #efdc17 url('images/main-bg.jpg') top center no-repeat;
 }
@@ -445,6 +448,43 @@ body {
   width: 1240px;
   margin: 0 auto;
 }
+.content p {
+  font-size: 18px;
+  color: #282528;
+  max-width: 940px;
+  margin: 0 auto;
+}
+/*.content p:last-of-type {
+  margin-bottom: 80px;
+}*/
+/* section-title */
+.section-title {
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  margin-top: 110px;
+  margin-bottom: 90px;
+}
+.section-title:before, .section-title:after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 60px;
+  background: #babdc1;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5px;
+} 
+.section-title:before {
+  left: -90px;
+}
+.section-title:after {
+  right: -90px;
+}
+/* */
 .page-header {
   width: 1240px;
   height: 93px;
@@ -530,7 +570,6 @@ body {
   background: url('images/iphone-hand.png') bottom right no-repeat;
 }
 .slide h2 {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 42px;
   margin: 0;
@@ -542,7 +581,6 @@ body {
   font-weight: 700;
 }
 .slide h3 {
-  font-family: 'Open Sans';
   font-size: 22px;
   font-weight: 600;
   margin: 0;
@@ -568,7 +606,6 @@ body {
   left: -22px;
 }
 .slide li p {
-  font-family: 'Open Sans';
   font-weight: 400;
   font-size: 16px;
   margin: 0;
@@ -579,7 +616,6 @@ body {
   right: 50%;
 }
 .buttons a {
-  font-family: 'Open Sans';
   font-weight: 600;
   border: 3px solid #282528;
   display: inline-block;
@@ -603,6 +639,84 @@ body {
 
 /* FEATURES */
 .features {
-  height: 400px;
-  background: green;
+  background: #FFF;
+  min-height: 1140px;
+}
+.features .content {
+  text-align: center;
+}
+.features ul {
+  display: block;
+  width: 100%;
+  padding: 0;
+  background: url('images/iphone.png') center center no-repeat;
+  min-height: 680px;
+}
+.features li {
+  list-style: none;
+  display: block;
+  width: 360px;
+  float: left;
+  text-align: left;
+  padding-left: 80px;
+  box-sizing: border-box;
+  margin-bottom: 90px;
+  position: relative;
+}
+.features li:nth-child(even) {
+  /*outline: 1px solid red;*/
+  margin-left: 260px;
+}
+.features li:nth-child(odd) {
+  /*outline: 1px solid blue;*/
+  margin-right: 260px;
+}
+.features li h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+}
+.features li p {
+  font-size: 13px;
+  line-height: 21px;
+  color: #282528;
+}
+.features li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.features li:nth-child(1):before {
+  background: url('images/tools-icon.png') no-repeat;
+  width: 36px;
+  height: 37px;
+}
+.features li:nth-child(2):before {
+  background: url('images/person-icon.png') no-repeat;
+  width: 33px;
+  height: 33px;
+}
+.features li:nth-child(3):before {
+  background: url('images/clock-icon.png') no-repeat;
+  width: 35px;
+  height: 34px;
+}
+.features li:nth-child(4):before {
+  background: url('images/paperplane-icon.png') no-repeat;
+  width: 34px;
+  height: 34px;
+}
+.features li:nth-child(5):before {
+  background: url('images/musicnote-icon.png') no-repeat;
+  width: 33px;
+  height: 37px;
+}
+.features li:nth-child(6):before {
+  background: url('images/camera-icon.png') no-repeat;
+  width: 35px;
+  height: 27px;
 }
